@@ -18,7 +18,7 @@ Olá 👋! Bem vindo a calculadora-x, com ela você consegue fazer os mais diver
 
 # Introdução
 
-Em conversas com os membros do time decidimos fazer um sistema com diversas calculadoras desde operações básicas até calculos mais específicos como Imc ou as calorias de uma refeição. Cada calculahttps://github.com/leo-tavares/calculadora-X.gitdora vai ficar acessível por um botão em uma barra de navegação.
+Em conversas com os membros do time decidimos fazer um sistema com diversas calculadoras desde operações básicas até calculos mais específicos como Imc ou as calorias de uma refeição. Cada calculadora vai ficar acessível por um botão em uma barra de navegação.
 
 # Como contribuir
 
