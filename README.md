@@ -6,6 +6,7 @@ Olá 👋! Bem vindo a calculadora-x, com ela você consegue fazer os mais diver
 
 # Índice
 - [Introdução](#introdução)
+- [🤔 Como contribuir?](#como-contribuir)
 - [Requisitos](#requisitos)
   - [Obrigatórios](#obrigatórios)
   - [Extras](#extras)
@@ -17,7 +18,48 @@ Olá 👋! Bem vindo a calculadora-x, com ela você consegue fazer os mais diver
 
 # Introdução
 
-Em conversas com os membros do time decidimos fazer um sistema com diversas calculadoras desde operações básicas até calculos mais específicos como Imc ou as calorias de uma refeição. Cada calculadora vai ficar acessível por um botão em uma barra de navegação.
+Em conversas com os membros do time decidimos fazer um sistema com diversas calculadoras desde operações básicas até calculos mais específicos como Imc ou as calorias de uma refeição. Cada calculahttps://github.com/leo-tavares/calculadora-X.gitdora vai ficar acessível por um botão em uma barra de navegação.
+
+# Como contribuir
+
+- Primeiro faça um clone do projeto
+
+```bash
+  git clone https://github.com/leo-tavares/calculadora-X.git
+```
+
+- Agora crie uma nova branch com o seu nome ou com a feature que você deseja criar/corrigir.
+Uma abordagem é o `git branch` + `git switch` 
+
+```bash
+  git branch NOME-DA-BRANCH
+  git switch NOME-DA-BRANCH
+```
+Você tambem pode fazer
+
+```bash 
+  git checkout -b NOME-DA-BRANCH
+```
+
+- Faça **todas** as modificações necessárias e de o commit
+
+```bash 
+  git commit -m "implemetação da funcionalidade X"
+```
+
+Se você encontrou algua issue relacionado você pode criar um link na tua mensagem de commmit usando '#' seguido pelo numero da issue.
+Dessa forma o commit será linkado automaticamente na issue :smiley:
+
+```bash 
+  git commit -m "implemetação da funcionalidade X #25"
+```
+
+- Após o(s) commit(s), basta enviar as modificações para o servidor
+
+```bash 
+  git push origin NOME-DA-BRANCH
+```
+
 
 # Requisitos
 ## Obrigatórios
