@@ -2,15 +2,14 @@
 
 ## Requisitos (Extras)
 - Funcionais
-  - calculo da taxa metabólica basal
-  - calculo de macronutrientes (proteína, carboidrato e gordura)
-  - calculos das calorias diárias
-  - calculo Imc
-  - calculo de calorias e macronutrientes por refeição
+  - calculo da taxa metabólica basal ( Leo-tavares )
+  - calculos das calorias diárias (Paulo)
+  - calculo Imc (Paulo)
+    - Imc = Peso / Altura * Altura
+  - calculo de calorias e macronutrientes por refeição (Leo-tavares)
   - calculo da diferença meta calórica/macros para o resultado do dia
-  - calculos de semanal
- - Não funcionais
- 
+
+ - Não funcionais 
  - Regra negócio
   - O calculo da necessidade calórico só pode ser feito com o resultado da taxa metabólico basal
 
