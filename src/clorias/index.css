@@ -1,0 +1,11 @@
+#div__container__calorias {
+  text-align: center;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+}
+
+#div__container__calorias > input {
+  text-align: center;
+  padding: 8px;
+}
