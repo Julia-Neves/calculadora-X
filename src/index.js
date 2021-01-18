@@ -9,6 +9,7 @@ const {
     calculadoraCaloriasBtn: caloriaBtn,
     calculadoraClassicBtn: classicBtn,
     calculadoraImcBtn: imcBtn,
+    inicioBtn: inicioButton,
   },
 } = headerFactorie();
 
@@ -22,31 +23,52 @@ introducao.textContent = `Olá 👋! Bem vindo a calculadora-x,
  Então não perca tempo e começe a utilizar aogra memso`;
 
 const imgIntro = document.createElement("img");
-imgIntro.src = "https://media1.giphy.com/media/QytRJAvwnaU7rvvjxC/giphy.gif"
+imgIntro.src = "https://media1.giphy.com/media/QytRJAvwnaU7rvvjxC/giphy.gif";
 imgIntro.id = "img_introducao";
 
-introducao.appendChild(imgIntro)
+introducao.appendChild(imgIntro);
 
-function removeIntro() {
-  introducao.remove();
+function removeElement(element) {
+  if (element) {
+    element.remove();
+  }
 }
 
+function appendElementToDom(element) {
+  if (!element || !element.id) {
+    console.log("Parâmetro da função 'appendElementToDom' inválido");
+    return;
+  }
+  const elementAlreadyExists = document.getElementById(element.id);
+  if (!elementAlreadyExists) {
+    document.body.appendChild(element);
+  }
+}
+
+inicioButton.onclick = function () {
+  removeElement(containerCalcudoras);
+  appendElementToDom(introducao);
+};
+
 classicBtn.onclick = function () {
-  removeIntro();
+  removeElement(introducao);
+  appendElementToDom(containerCalcudoras);
   containerCalcudoras.innerHTML = "";
   containerCalcudoras.appendChild(calculadoraClasscaContainer);
 };
 
 caloriaBtn.onclick = function () {
-  removeIntro();
+  removeElement(introducao);
+  appendElementToDom(containerCalcudoras);
   containerCalcudoras.innerHTML = "";
   containerCalcudoras.appendChild(calculadoraCaloriasContainer);
 };
 
 imcBtn.onclick = function () {
-  removeIntro();
+  removeElement(introducao);
+  appendElementToDom(containerCalcudoras);
   containerCalcudoras.innerHTML = "";
   containerCalcudoras.appendChild(calculadoraImcContainer);
 };
 
-document.body.append(headerContainer, introducao, containerCalcudoras);
+document.body.append(headerContainer, introducao);

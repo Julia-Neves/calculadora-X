@@ -4,38 +4,35 @@
 @import "../imc/index.css";
 @import "../header/index.css";
 
+body {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-body {  
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: wheat;
+  background-color: wheat;
 }
 
 #div__container__calculadoras {
-    width: 60vw;
-    height: 40vh;
-    padding: 8px;
+  width: 60vw;
+  height: 40vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #p__introducao {
-    width: 60vw;
-    height: 0px;/* gambiarra para corrigir a altura #TODO */
-    font-size: 18px;
-    text-align: center;
+  width: 80vw;
+  height: 40vh;
+  font-size: 18px;
+  text-align: center;
 }
 
-#img_introducao{
-    display: block;
-    margin: 0 auto;
-    margin-top: 16px;
-    border-radius: 8px;
+#img_introducao {
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
+  border-radius: 8px;
 }

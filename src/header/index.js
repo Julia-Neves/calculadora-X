@@ -16,7 +16,12 @@ const calculadoraImcBtn = document.createElement("button");
 calculadoraImcBtn.id = "calculadoraImcBtn__buttonbar__header";
 calculadoraImcBtn.textContent = "Imc";
 
+const inicioBtn = document.createElement("button");
+inicioBtn.id = "inicioBtn__buttonbar__header";
+inicioBtn.textContent = "Inicio";
+
 buttonBar.append(
+  inicioBtn,
   calculadoraClassicBtn,
   calculadoraCaloriasBtn,
   calculadoraImcBtn
@@ -32,6 +37,7 @@ function headerFactorie() {
       calculadoraClassicBtn,
       calculadoraCaloriasBtn,
       calculadoraImcBtn,
+      inicioBtn
     },
   };
   //Jogando todo o conteudo do header.content
