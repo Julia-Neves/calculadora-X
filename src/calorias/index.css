@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: darksalmon;
 
   padding: 8px;
 }
@@ -20,7 +21,7 @@
 #button__calcula__calorias {
   cursor: pointer;
   
-  background-color: orange;
+  background-color: green;
 
   height: 40px;
   width: 120px;
@@ -32,7 +33,7 @@
 }
 
 #button__calcula__calorias:hover  {
-  background-color: darkorange;
+  background-color: red;
   opacity: 0.9;
   transform: scale(1.05);
 }

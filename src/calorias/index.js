@@ -20,20 +20,24 @@ const button = document.createElement("button");
 button.id = "button__calcula__calorias";
 button.textContent = "Calcular!";
 button.onclick = function () {
-  //Calculo das calorias
-  // 1 x Carboidrato = 4 calorias
-  // 1 x Proteína = 4 calorias
-  // 1 x Gordura = 9 calorias
 
-  //Pegar o valor de cada um dos input's
-  // Exibir o valor do resultado na tag p de resposta
 
-  //demostração de como pegar o valor do input
+
   const valorDeProteina = protInput.value;
   console.log(valorDeProteina);
 
-  //demostração de como 'colocar' um valor na tag p
-  resposta.textContent = `Total de calorias ${500}kcal`;
+  const valorCarb = carbInput.value;
+  console.log(valorCarb);
+
+  const valorFat = fatInput.value;
+  console.log(valorFat);
+
+  // Fazendo o calculo das calorias//
+  const totalCalorias = valorCarb * 4 + valorDeProteina * 4 + valorFat * 9;
+
+
+ //demostração de como 'colocar' um valor na tag p//
+  resposta.textContent = `Total de calorias ${totalCalorias}kcal`;
 };
 
 const inputs = {
