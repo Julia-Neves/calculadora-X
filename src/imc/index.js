@@ -46,7 +46,9 @@ function calculadoraImcFactorie() {
     form.appendChild(result);
   });
 
-  const calculadora = div;
+  const calculadora = {
+    container: div
+  };
 
-  return calculadora;
+  return calculadora.container;
 }
