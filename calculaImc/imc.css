@@ -1,0 +1,45 @@
+#divForm{
+   display: flex;
+   justify-content: center;
+   height: 150px;
+   margin-top: 10%;
+  align-items: center;
+  
+}
+#form{
+   width: 200px;
+border: 1px solid black;
+padding: 5%;
+margin: auto;
+box-shadow: 10px 10px 5px #ccc;
+
+}
+#peso, #alt{
+   margin-bottom: 20px;
+}
+#peso, #alt{
+   padding: 5px 20px;
+}
+#but{
+   padding: 2px 20px;
+   margin-left: 27% ;
+}
+#divImage{
+   display: flex;
+   justify-content: center;
+   height: 500px;
+   align-items: flex-end;
+}
+#result{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: flex-end;
+  color: green;
+  font-size: 20px;
+  
+}
+#image{
+   width: 600px;
+   height: 500px;
+}
