@@ -7,7 +7,6 @@
 
 body {  
     height: 70vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,4 +24,18 @@ body {
     justify-content: center;
     align-items: center;
 
+}
+
+#p__introducao {
+    width: 60vw;
+    height: 0px;/* gambiarra para corrigir a altura #TODO */
+    font-size: 18px;
+    text-align: center;
+}
+
+#img_introducao{
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-radius: 8px;
 }

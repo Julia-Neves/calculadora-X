@@ -15,19 +15,38 @@ const {
 const containerCalcudoras = document.createElement("div");
 containerCalcudoras.id = "div__container__calculadoras";
 
+const introducao = document.createElement("p");
+introducao.id = "p__introducao";
+introducao.textContent = `Olá 👋! Bem vindo a calculadora-x,
+ com ela você consegue fazer os mais diversos cálculos sem precisar "caçar" no google formulas mágicas joy!
+ Então não perca tempo e começe a utilizar aogra memso`;
+
+const imgIntro = document.createElement("img");
+imgIntro.src = "https://media1.giphy.com/media/QytRJAvwnaU7rvvjxC/giphy.gif"
+imgIntro.id = "img_introducao";
+
+introducao.appendChild(imgIntro)
+
+function removeIntro() {
+  introducao.remove();
+}
+
 classicBtn.onclick = function () {
+  removeIntro();
   containerCalcudoras.innerHTML = "";
   containerCalcudoras.appendChild(calculadoraClasscaContainer);
 };
 
 caloriaBtn.onclick = function () {
+  removeIntro();
   containerCalcudoras.innerHTML = "";
   containerCalcudoras.appendChild(calculadoraCaloriasContainer);
 };
 
 imcBtn.onclick = function () {
+  removeIntro();
   containerCalcudoras.innerHTML = "";
   containerCalcudoras.appendChild(calculadoraImcContainer);
 };
 
-document.body.append(headerContainer, containerCalcudoras);
+document.body.append(headerContainer, introducao, containerCalcudoras);
