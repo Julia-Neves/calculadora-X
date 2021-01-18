@@ -1,11 +1,15 @@
 #div__container__calorias {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: darksalmon;
 
+  height: 350px;
+  width: 350px;
+
   padding: 8px;
+  border-radius: 8px;
 }
 
 #div__container__calorias > input {
