@@ -1,0 +1,43 @@
+#div__container__calorias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darksalmon;
+
+  padding: 8px;
+}
+
+#div__container__calorias > input {
+  display: block;
+  text-align: center;
+  
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border-width: 0.5px;
+}
+
+#button__calcula__calorias {
+  cursor: pointer;
+  
+  background-color: green;
+
+  height: 40px;
+  width: 120px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#button__calcula__calorias:hover  {
+  background-color: red;
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+#p__calculo__das__calorias {
+
+}
