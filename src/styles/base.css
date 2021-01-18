@@ -1,0 +1,21 @@
+@import "./reset.css";
+@import "../calorias/index.css";
+@import "../classica/index.css";
+@import "../imc/index.css";
+@import "../header/index.css";
+
+
+body {  
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: wheat;
+}
+
+#div__container__calculadoras {
+    width: 60vw;
+}
