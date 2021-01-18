@@ -40,6 +40,11 @@ function calculadoraImcFactorie() {
     let calc = {
       calculo: peso / (altura * altura),
     };
+
+    if (peso == '' || altura ==''){
+      alert("Os campos devem ser preenchidos ");
+      return;
+    }
     let result = document.createElement("p");
     result.setAttribute("id", "result");
     result.textContent = `Seu Imc é igual á: ${Math.round(calc.calculo)}`;
