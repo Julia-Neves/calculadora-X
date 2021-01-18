@@ -49,6 +49,14 @@ const inputs = {
 const container = document.createElement("div");
 container.id = "div__container__calorias";
 
-container.append(...Object.values(inputs), resposta, button);
+function calculadoraCaloriasFactorie(){
+  const calculadora = {
+    container,
+    content: [carbInput, protInput, fatInput, resposta, button]
+  }
+  //Faz o append de todo o conteudo do 'calculadora.content' no elemento container
+  //usando o 'spread operator' que são esses três pontinhos '...'
+  calculadora.container.append(...calculadora.content)
 
-document.body.append(container);
+  return calculadora.container
+}
