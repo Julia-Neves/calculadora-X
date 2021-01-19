@@ -7,6 +7,7 @@ Olá 👋! Bem vindo a calculadora-x, com ela você consegue fazer os mais diver
 # Índice
 - [Introdução](#introdução)
 - [🤔 Como contribuir?](#como-contribuir)
+  - [🤔 fiz um fork como pegar as atualizações?](#como-pegar-atualizações-a-partir-de-um-fork)
 - [Requisitos](#requisitos)
   - [Obrigatórios](#obrigatórios)
   - [Extras](#extras)
@@ -59,6 +60,35 @@ Dessa forma o commit será linkado automaticamente na issue :smiley:
 ```bash 
   git push origin NOME-DA-BRANCH
 ```
+
+## Como pegar atualizações a partir de um fork
+
+Se você optou por fazer um fork saiba que ele funciona como um novo repositório, isso quer dizer que o "endereço" do origin é diferente do repositório de origem. 
+
+Uma abordagem interessante é você adicionar uma "remote url", abaixo deixo uma sugestão
+
+```bash 
+  git remote add repoOriginal https://github.com/leo-tavares/calculadora-X.git
+``` 
+
+agora quando você pode dar pull diretamente do repositorio original.
+
+```bash
+  git pull repoOriginal NOME-DA-BRANCH
+```
+
+Se você quiser pegar uma atualização do branch main pode fazer algo do tipo
+
+```bash
+  git pull repoOriginal main
+```
+
+O mesmo se aplica para o push... mas... nesse caso o ideal é fazer um pullrequest... mas se ainda sim você quiser podes fazer algo do tipo
+
+```bash
+  git push repoOriginal NOME-DA-BRANCH
+```
+**O ideal é nunca commitar diretamente na branch main, eu dei um exemplo **
 
 
 # Requisitos
