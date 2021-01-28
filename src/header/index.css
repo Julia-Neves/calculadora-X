@@ -1,0 +1,30 @@
+#div__container__header {
+    background-color: black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    width: 80vw;
+}
+
+#div__buttonbar__header > button{
+    color: yellow;
+    background-color: transparent;
+    
+    margin: 0 16px;
+    padding: 0 8px;
+    border: none;
+
+    cursor: pointer;
+    font-size: 24px;
+
+    transition: transform .3s;
+}
+
+#div__buttonbar__header > button:hover {
+    transform: scale(1.2);
+}

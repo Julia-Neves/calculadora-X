@@ -20,24 +20,24 @@ const button = document.createElement("button");
 button.id = "button__calcula__calorias";
 button.textContent = "Calcular!";
 button.onclick = function () {
-
-
-
   const valorDeProteina = protInput.value;
-  console.log(valorDeProteina);
-
   const valorCarb = carbInput.value;
-  console.log(valorCarb);
-
   const valorFat = fatInput.value;
-  console.log(valorFat);
+
+  if (!valorDeProteina || !valorCarb || !valorFat) {
+    alert("Todos os campos devem ser preenchidos!");
+    return;
+  } else if (valorDeProteina > 999 || valorCarb > 999 || valorFat > 999) {
+    alert("Os valores não podem passar de 999!");
+    return;
+  }
 
   // Fazendo o calculo das calorias//
   const totalCalorias = valorCarb * 4 + valorDeProteina * 4 + valorFat * 9;
-
-
- //demostração de como 'colocar' um valor na tag p//
+  //demostração de como 'colocar' um valor na tag p//
   resposta.textContent = `Total de calorias ${totalCalorias}kcal`;
+
+  container.insertBefore(resposta, button);
 };
 
 const inputs = {
@@ -49,6 +49,14 @@ const inputs = {
 const container = document.createElement("div");
 container.id = "div__container__calorias";
 
-container.append(...Object.values(inputs), resposta, button);
+function calculadoraCaloriasFactorie() {
+  const calculadora = {
+    container,
+    content: [carbInput, protInput, fatInput, button],
+  };
+  //Faz o append de todo o conteudo do 'calculadora.content' no elemento container
+  //usando o 'spread operator' que são esses três pontinhos '...'
+  calculadora.container.append(...calculadora.content);
 
-document.body.append(container);
+  return calculadora.container;
+}
